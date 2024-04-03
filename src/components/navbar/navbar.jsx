@@ -19,8 +19,8 @@ const Navbar = () => {
                 <Link className='navbar-link' to='/about'>About</Link>
                 <Link className='navbar-link' to='/premiume'>Premiume</Link>
               </div>
-              <Button className="navbar-auth-button" type="primary">Create Account</Button>
-              <Button className="navbar-auth-button" type="default">Sign up</Button>
+              <Button className="navbar-auth-button" size='middle' type="primary">Create Account</Button>
+              <Button className="navbar-auth-button" size='middle' type="default">Sign up</Button>
             </div>
           </div>
         </div>

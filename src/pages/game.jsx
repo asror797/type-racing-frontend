@@ -37,13 +37,29 @@ const Game = () => {
                   45wpm
                 </div>
               </div>
+              <div className="racer-wrapper">
+                <div className="player-way">
+                  <p>Moshina</p>
+                </div>
+                <div className="player-speed">
+                  45wpm
+                </div>
+              </div>
+              <div className="racer-wrapper">
+                <div className="player-way">
+                  <p>Moshina</p>
+                </div>
+                <div className="player-speed">
+                  45wpm
+                </div>
+              </div>
             </div>
             <div className="game-text-container">
               <span className="game-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui perspiciatis modi eos magni sapiente deserunt assumenda, cupiditate quasi tempora.</span>
             </div>
             <div className="game-menu-buttons">
-              <Button danger size='middle'>Main menu (leave game)</Button>
-              <Button type='primary' primary size='middle'>Race again</Button>
+              <Button danger size='large'>Main menu (leave game)</Button>
+              <Button type='primary' size='large' primary>Race again</Button>
             </div>
             <Leaderboard/>
           </div>
