@@ -2,6 +2,7 @@ import { Button } from 'antd'
 import './game.css'
 import Leaderboard from '../components/leaderboard/leaderboard'
 import Navbar from '../components/navbar/navbar'
+import Footer from '../components/footer/footer'
 
 const Game = () => {
   return(
@@ -48,6 +49,7 @@ const Game = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

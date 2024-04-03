@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './navbar.css'
 import { Button } from "antd"
 
@@ -9,11 +10,17 @@ const Navbar = () => {
         <div className="container">
           <div className="navbar-wrapper">
             <div className="navbar-left">
-              <h4>TypeDash</h4>
+              <div className="navbar-logo">
+                <p>Logo</p>
+              </div>
             </div>
             <div className="navbar-right">
-              <Button type="primary">Create Account</Button> <span> </span>
-              <Button type="default">Sign up</Button>
+              <div className="navbar-menu">
+                <Link className='navbar-link' to='/about'>About</Link>
+                <Link className='navbar-link' to='/premiume'>Premiume</Link>
+              </div>
+              <Button className="navbar-auth-button" type="primary">Create Account</Button>
+              <Button className="navbar-auth-button" type="default">Sign up</Button>
             </div>
           </div>
         </div>

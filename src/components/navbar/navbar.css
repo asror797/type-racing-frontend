@@ -7,3 +7,23 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-menu {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu .navbar-link {
+  padding-right: 7px;
+}
+
+.navbar-auth-button {
+  margin-left: 10px;
+}
