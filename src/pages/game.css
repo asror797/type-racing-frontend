@@ -1,0 +1,33 @@
+
+.game-text-container {
+  position: relative;
+  padding: 25px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.game-text {
+  font-size: 20px;
+  line-height: 1.7em;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 400;
+}
+
+.racer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.player-way {
+  border-bottom: 1px dashed rgb(146, 144, 144);
+  min-width: 95%;
+}
+
+.game-menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
