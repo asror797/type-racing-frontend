@@ -6,6 +6,10 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
+.game-wrapper {
+  padding: 35px 25px;
+}
+
 .game-text {
   font-size: 20px;
   line-height: 1.7em;
@@ -18,7 +22,6 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
-  padding: 35px 25px;
 }
 
 .player-way {
