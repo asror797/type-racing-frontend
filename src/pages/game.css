@@ -21,6 +21,20 @@
   font-weight: 400;
 }
 
+.player-car-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.player-name {
+  width: 65px;
+  font-size: 13px;
+}
+
+.player-car-image {
+  cursor: pointer;
+}
+
 .racer-wrapper {
   display: flex;
   align-items: center;
