@@ -8,6 +8,7 @@ import auto1 from '../assets/Auto_7.png'
 import auto2 from '../assets/Auto_6.png'
 import auto3 from '../assets/Auto_8.png'
 import auto4 from '../assets/Auto_4.png'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Game = () => {
   return(
