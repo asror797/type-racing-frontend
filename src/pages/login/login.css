@@ -1,0 +1,24 @@
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.forum-box {
+  width: 375px;
+  padding: 25px;
+  background-color:white;
+  border-radius: 3px;
+}
+
+.forum-box h2 {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.forum-box div {
+  margin-bottom: 25px;
+}

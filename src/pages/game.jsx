@@ -1,5 +1,5 @@
-import { Button } from 'antd'
 import './game.css'
+import { Button } from 'antd'
 import Leaderboard from '../components/leaderboard/leaderboard'
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer'
@@ -7,6 +7,7 @@ import auto from '../assets/Auto_5.png'
 import auto1 from '../assets/Auto_7.png'
 import auto2 from '../assets/Auto_6.png'
 import auto3 from '../assets/Auto_8.png'
+import auto4 from '../assets/Auto_4.png'
 
 const Game = () => {
   return(
@@ -15,7 +16,7 @@ const Game = () => {
       <div className="game-page">
         <div className="container">
           <div className="game-page-wrapper">
-            <h1>Game page</h1>
+            <h3>Waiting for more people...</h3>
             <div className="game-playground">
               <div className="racer-wrapper">
                 <div className="player-way">
@@ -68,7 +69,7 @@ const Game = () => {
                   <div className="player-car-wrapper">
                     <div className="player-name">Akbar (acrdrkbr)</div>
                     <div className='player-car-image'>
-                      <img height={40} src={auto1}  alt="car" />
+                      <img height={40} src={auto4}  alt="car" />
                     </div>
                   </div>
                 </div>
