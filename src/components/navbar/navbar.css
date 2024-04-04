@@ -4,6 +4,7 @@
 
 .navbar-wrapper {
   display: flex;
+  padding: 15px 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -26,4 +27,8 @@
 
 .navbar-auth-button {
   margin-left: 10px;
+}
+
+.navbar-logo {
+  cursor: pointer;
 }

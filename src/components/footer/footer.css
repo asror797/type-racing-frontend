@@ -1,3 +1,7 @@
 .footer {
   background-color: white;
 }
+
+.footer-wrapper {
+  padding: 35px 0;
+}

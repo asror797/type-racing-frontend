@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import { Button } from "antd"
+import logo from '../../assets/TypeDash.com.png'
 
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
           <div className="navbar-wrapper">
             <div className="navbar-left">
               <div className="navbar-logo">
-                <p>Logo</p>
+                <img width={175} src={logo} alt="logo" />
               </div>
             </div>
             <div className="navbar-right">
