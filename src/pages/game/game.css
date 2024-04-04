@@ -21,6 +21,11 @@
   font-weight: 400;
 }
 
+.blink {
+  color: rgb(170, 164, 164);
+  font-weight: 300;
+}
+
 .player-car-wrapper {
   display: flex;
   align-items: center;
@@ -46,6 +51,8 @@
   border-bottom: 1px dashed rgb(146, 144, 144);
   min-width: 95%;
 }
+
+
 
 .game-menu-buttons {
   display: flex;

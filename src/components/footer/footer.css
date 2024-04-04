@@ -4,4 +4,18 @@
 
 .footer-wrapper {
   padding: 35px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-wrapper ul  {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-wrapper ul li {
+  padding-right: 30px;
 }

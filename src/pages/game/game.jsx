@@ -1,16 +1,31 @@
+import { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import './game.css'
 import { Button } from 'antd'
-import Leaderboard from '../components/leaderboard/leaderboard'
-import Navbar from '../components/navbar/navbar'
-import Footer from '../components/footer/footer'
-import auto from '../assets/Auto_5.png'
-import auto1 from '../assets/Auto_7.png'
-import auto2 from '../assets/Auto_6.png'
-import auto3 from '../assets/Auto_8.png'
-import auto4 from '../assets/Auto_4.png'
-import { useSelector, useDispatch } from 'react-redux'
+import Navbar from '../../components/navbar/navbar'
+import Footer from '../../components/footer/footer'
+import Leaderboard from '../../components/leaderboard/leaderboard'
+import auto from '../../assets/Auto_5.png'
+import auto1 from '../../assets/Auto_7.png'
+import auto2 from '../../assets/Auto_6.png'
+import auto3 from '../../assets/Auto_8.png'
+import auto4 from '../../assets/Auto_4.png'
 
 const Game = () => {
+  // const { game, word } = useSelector((state) => state)
+
+  // useEffect(() => {
+  //   console.log(game,word)
+  // },[])
+
+  useEffect(() => {
+    document.onkeydown = (e) => {
+      if (e.key.length === 1 || e.key === "Backspace" || e.key === "Tab") {
+        e.preventDefault();
+      }
+    }
+  })
+
   return(
     <>
       <Navbar/>
@@ -27,7 +42,7 @@ const Game = () => {
                   </div>
                 </div>
                 <div className="player-speed">
-                  45wpm
+                  0 WPM
                 </div>
               </div>
               <div className="racer-wrapper">
@@ -38,7 +53,7 @@ const Game = () => {
                   </div>
                 </div>
                 <div className="player-speed">
-                  45wpm
+                  0 WPM
                 </div>
               </div>
               <div className="racer-wrapper">
@@ -49,7 +64,7 @@ const Game = () => {
                   </div>
                 </div>
                 <div className="player-speed">
-                  45wpm
+                  0 WPM
                 </div>
               </div>
               <div className="racer-wrapper">
@@ -62,7 +77,7 @@ const Game = () => {
                   </div>
                 </div>
                 <div className="player-speed">
-                  45wpm
+                  0 WPM
                 </div>
               </div>
               <div className="racer-wrapper">
@@ -75,12 +90,12 @@ const Game = () => {
                   </div>
                 </div>
                 <div className="player-speed">
-                  45wpm
+                  0 WPM
                 </div>
               </div>
             </div>
             <div className="game-text-container">
-              <span className="game-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui perspiciatis modi eos magni sapiente deserunt assumenda, cupiditate quasi tempora.</span>
+              <span className="game-text"><span id="caret" className="blink" style={{  left: 0 * 14.5833, }}>|</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui perspiciatis modi eos magni sapiente deserunt assumenda, cupiditate quasi tempora.</span>
             </div>
             <div className="game-menu-buttons">
               <Button danger size='large'>Main menu (leave game)</Button>
