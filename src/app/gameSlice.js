@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  words: '',
+  words: 'Typeracer was created by programmer Alex, using RReactjs. Players compete by racing miniture cars that advance as the users type various passages. The passages range in lengths from approximatally.',
   isOver: false,
   isOpen: false,
   gameID: '',
