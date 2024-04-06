@@ -10,11 +10,11 @@ const Footer = () => {
            <div className="footer-left">
              <div className="footer-link-wrapper">
                 <ul className='footer-menu-links'>
-                  <li>Home</li>
-                  <li>Terms of Service</li>
-                  <li>Privacy Policy</li>
-                  <li>Contact</li>
-                  <li>Faq</li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/terms-and-service">Terms of Service</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="faq">Faq</a></li>
                 </ul>
              </div>
              <div className="footer-info">
