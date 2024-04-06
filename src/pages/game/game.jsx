@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import './game.css'
 import { Button } from 'antd'
 import Navbar from '../../components/navbar/navbar'
@@ -10,21 +10,22 @@ import auto1 from '../../assets/Auto_7.png'
 import auto2 from '../../assets/Auto_6.png'
 import auto3 from '../../assets/Auto_8.png'
 import auto4 from '../../assets/Auto_4.png'
+import { pushWord } from '../../app/wordSlice'
 
 const Game = () => {
-  // const { game, word } = useSelector((state) => state)
+  const { game: { players }, word: { wordList } } = useSelector((state) => state)
 
-  // useEffect(() => {
-  //   console.log(game,word)
-  // },[])
+  const dispatch = useDispatch()
 
   useEffect(() => {
     document.onkeydown = (e) => {
       if (e.key.length === 1 || e.key === "Backspace" || e.key === "Tab") {
+        console.log(e)
+        dispatch(pushWord(e.key))
         e.preventDefault();
       }
     }
-  })
+  },[])
 
   return(
     <>
@@ -95,7 +96,7 @@ const Game = () => {
               </div>
             </div>
             <div className="game-text-container">
-              <span className="game-text"><span id="caret" className="blink" style={{  left: 0 * 14.5833, }}>|</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui perspiciatis modi eos magni sapiente deserunt assumenda, cupiditate quasi tempora.</span>
+              <span className="game-text">{wordList.join("")}</span>
             </div>
             <div className="game-menu-buttons">
               <Button danger size='large'>Main menu (leave game)</Button>

@@ -22,11 +22,28 @@
 }
 
 .navbar-menu .navbar-link {
-  padding-right: 7px;
+  padding-right: 20px;
+  color: #1677ff;
+  text-decoration: none;
 }
 
 .navbar-auth-button {
   margin-left: 10px;
+  font-size: smaller;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 7px;
+}
+
+.button-primary {
+  background-color: #1677ff;
+  border: 1px solid #1677ff;
+  color: white;
+}
+
+.button-default {
+  border: 1px solid #1677ff;
+  color: #1677ff;
 }
 
 .navbar-logo {

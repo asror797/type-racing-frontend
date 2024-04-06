@@ -9,11 +9,11 @@ const Signup = () => {
       <div className="forum-box">
         <h2>Sign Up</h2>
         <div className="email">
-          <Input size='middle' placeholder='Full Name'>
+          <Input size='large' placeholder='Full Name'>
           </Input>
         </div>
         <div className="email">
-          <Input size='middle' placeholder='Email'>
+          <Input size='large' placeholder='Email'>
           </Input>
         </div>
         <div className="username">
@@ -21,15 +21,11 @@ const Signup = () => {
             placeholder="Username"
             allowClear
             enterButton="Check"
-            size="middle"
+            size="large"
           />
         </div>
         <div className="password">
-          <Input.Password size='middle' placeholder='Password'>
-          </Input.Password>
-        </div>
-        <div className="password">
-          <Input.Password size='middle' placeholder='Repeat Password'>
+          <Input.Password size='large' placeholder='Password'>
           </Input.Password>
         </div>
         <div className="login-button">

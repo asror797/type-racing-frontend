@@ -20,8 +20,13 @@ const Navbar = () => {
                 <Link className='navbar-link' to='/about'>About</Link>
                 <Link className='navbar-link' to='/premiume'>Premiume</Link>
               </div>
-              <Button className="navbar-auth-button" size='middle' type="primary">Create Account</Button>
-              <Button className="navbar-auth-button" size='middle' type="default">Sign up</Button>
+
+                <Link to='/signin' className='navbar-auth-button button-primary'>Create Account</Link>
+                <Link to='/sign-up' className='navbar-auth-button button-default'>Sign up</Link>
+                {/**
+                 * <Button className="navbar-auth-button" size='middle' type="primary">Create Account</Button>
+                 * <Button className="navbar-auth-button" size='middle' type="default">Sign up</Button>
+                 */}
             </div>
           </div>
         </div>

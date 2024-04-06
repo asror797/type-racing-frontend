@@ -4,7 +4,7 @@ const initialState = {
   currWord: '',
   typedWord: '',
   typedHistory: '',
-  wordList: '',
+  wordList: [],
   activeWordRef: '',
   caretRef: ''
   
@@ -16,9 +16,15 @@ export const wordSlice = createSlice({
   reducers: {
     setChar: (state, action) => {
       state.currWord = action.payload
+    },
+    setCurrWord: (state, action) => {
+      state.currWord = action.payload
+    },
+    pushWord: (state, action) => {
+      state.wordList.push(action.payload)
     }
   }
 })
 
 
-export const { setChar } = wordSlice.actions
+export const { setChar, pushWord } = wordSlice.actions
